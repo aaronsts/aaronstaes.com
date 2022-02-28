@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  h1 {
+    @apply font-black text-9xl leading-tight tracking-tighter uppercase mb-4;
+  }
+  ,
+  h2 {
+    @apply font-bold text-5xl leading-tight tracking-wider uppercase mb-4;
+  }
+  ,
+  h3 {
+    @apply font-bold text-3xl leading-relaxed uppercase mb-2;
+  }
+  h4 {
+    @apply font-bold text-xl leading-relaxed tracking-widest uppercase mb-2;
+  }
+  p {
+    @apply font-light text-xl my-2;
+  }
+}
