@@ -1,9 +1,16 @@
-import Style from "../components/Style";
+// components
+import About from "../components/About";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import Why from "../components/Why";
 
 function HomePage() {
   return (
     <>
-    <Style />
+      <Navbar />
+      <Header />
+      <About />
+      <Why />
     </>
   );
 }

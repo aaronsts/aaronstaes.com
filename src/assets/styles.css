@@ -3,21 +3,41 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    @apply bg-gray-50;
+  }
   h1 {
-    @apply font-black text-9xl leading-tight tracking-tighter uppercase mb-4;
+    @apply font-black text-5xl md:text-8xl lg:text-9xl leading-none tracking-tighter uppercase mb-4;
   }
-  ,
+
   h2 {
-    @apply font-bold text-5xl leading-tight tracking-wider uppercase mb-4;
+    @apply font-bold text-5xl md:text-7xl leading-tight tracking-wider uppercase;
   }
-  ,
+
   h3 {
     @apply font-bold text-3xl leading-relaxed uppercase mb-2;
   }
   h4 {
-    @apply font-bold text-xl leading-relaxed tracking-widest uppercase mb-2;
+    @apply font-bold text-xl lg:text-2xl leading-relaxed tracking-widest uppercase mb-2;
   }
   p {
-    @apply font-light text-xl my-2;
+    @apply font-light text-xl lg:text-2xl my-2;
+  }
+
+  .wrapper {
+    @apply px-4 md:px-8 lg:px-16;
+  }
+  .section {
+    @apply md:my-16;
+  }
+
+  .gradient {
+    @apply bg-gradient-to-tr from-amber-400 to-rose-600;
+  }
+  .gradient-h {
+    @apply bg-gradient-to-r from-amber-400 to-rose-600;
+  }
+  .gradient-v {
+    @apply bg-gradient-to-t from-amber-400 to-rose-600;
   }
 }
