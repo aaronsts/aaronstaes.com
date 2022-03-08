@@ -36,7 +36,7 @@ const content = [
     image: (
       <Image
         src={projectTwo}
-        alt="landing page of rvnb"
+        alt="landing page of streamdream"
         layout="fill"
         objectFit="cover"
         objectPosition="center"

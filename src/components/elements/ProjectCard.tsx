@@ -3,11 +3,19 @@ import React from "react";
 import { SiJavascript } from "react-icons/si";
 import { SiRubyonrails } from "react-icons/si";
 
+interface Image {
+  src: string;
+  alt: string;
+  layout: string;
+  objectFit: string;
+  objectPosition: string;
+}
+
 type Props = {
   title: string;
   description: string;
   link: string;
-  image: typeof Image;
+  image: Image;
 };
 
 const ProjectCard = (props: Props) => {
