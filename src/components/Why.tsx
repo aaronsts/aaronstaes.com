@@ -40,7 +40,6 @@ const Why = (props: Props) => {
   const [card, setCard] = useState(0);
 
   const handleClick = (e) => {
-    console.log(e.currentTarget.id);
     setCard(e.currentTarget.id);
   };
 
@@ -52,7 +51,7 @@ const Why = (props: Props) => {
         <div className="gradient-h w-fit py-4 px-16 -skew-y-3 mb-16">
           <h2 className="skew-y-3 text-gray-50">Why</h2>
         </div>
-        <div className="flex w-2/3 justify-between mb-8">
+        <div className="flex flex-col md:flex-row w-2/3 justify-between mb-8">
           <div className="flex flex-col items-center">
             <div
               id="0"
