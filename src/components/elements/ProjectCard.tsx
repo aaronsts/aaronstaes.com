@@ -1,8 +1,5 @@
 import React from "react";
 
-import Image from "next/image";
-import projectOne from "../../assets/project-one.jpeg";
-
 import { SiJavascript } from "react-icons/si";
 import { SiRubyonrails } from "react-icons/si";
 
@@ -10,20 +7,13 @@ type Props = {
   title: string;
   description: string;
   link: string;
+  image: typeof Image;
 };
 
 const ProjectCard = (props: Props) => {
   return (
     <div className="group w-72 h-96 overflow-hidden">
-      <div className=" text-gray-50 relative h-full ">
-        <Image
-          src={projectOne}
-          alt="landing page of rvnb"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-        />
-      </div>
+      <div className=" text-gray-50 relative h-full ">{props.image}</div>
       <a href={props.link} target="_blank" rel="noreferrer">
         <div className="bg-gray-900/60 shadow cursor-pointer backdrop-blur text-gray-50 w-72 h-96 p-4 transition-all duration-500 ease-out -translate-y-16 group-hover:-translate-y-full">
           <h3>{props.title}</h3>
