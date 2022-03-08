@@ -6,7 +6,11 @@ import projectOne from "../../assets/project-one.jpeg";
 import { SiJavascript } from "react-icons/si";
 import { SiRubyonrails } from "react-icons/si";
 
-type Props = {};
+type Props = {
+  title: string;
+  description: string;
+  link: string;
+};
 
 const ProjectCard = (props: Props) => {
   return (
@@ -20,18 +24,10 @@ const ProjectCard = (props: Props) => {
           objectPosition="center"
         />
       </div>
-      <a
-        href="https://rvnb-rails.herokuapp.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div className="bg-gray-900/60 shadow cursor-pointer backdrop-blur text-gray-50 w-72 h-96 p-4 transition-all duration-500 ease-out group-hover:-translate-y-full">
-          <h3>Title</h3>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-            tenetur praesentium quam, quidem accusamus necessitatibus sint!
-            Ullam eaque dolores ipsum soluta nemo vel quisquam pariatur.
-          </p>
+      <a href={props.link} target="_blank" rel="noreferrer">
+        <div className="bg-gray-900/60 shadow cursor-pointer backdrop-blur text-gray-50 w-72 h-96 p-4 transition-all duration-500 ease-out -translate-y-16 group-hover:-translate-y-full">
+          <h3>{props.title}</h3>
+          <p className="text-base">{props.description}</p>
           <div className="w-full h-2 gradient-h my-4"></div>
           <div className="flex gap-4">
             <SiJavascript

@@ -15,7 +15,7 @@
   }
 
   h3 {
-    @apply font-bold text-3xl leading-relaxed uppercase mb-2;
+    @apply font-bold text-3xl uppercase mb-2;
   }
   h4 {
     @apply font-bold text-xl lg:text-2xl leading-relaxed tracking-widest uppercase mb-2;
