@@ -6,6 +6,10 @@ import Image from "next/image";
 import projectOne from "../assets/project-one.jpeg";
 import projectTwo from "../assets/project-two.png";
 
+// Icons
+import { SiJavascript } from "react-icons/si";
+import { SiRubyonrails } from "react-icons/si";
+
 type Props = {};
 
 const content = [
@@ -26,6 +30,16 @@ const content = [
         objectPosition="center"
       />
     ),
+    technologies: [
+      <SiJavascript
+        key={1}
+        style={{ color: "#F7DF1E", width: "3rem", height: "3rem" }}
+      />,
+      <SiRubyonrails
+        key={2}
+        style={{ color: "#CC0000", width: "3rem", height: "3rem" }}
+      />,
+    ],
   },
   {
     id: 2,
@@ -42,6 +56,7 @@ const content = [
         objectPosition="center"
       />
     ),
+    technologies: [],
   },
 ];
 
@@ -59,6 +74,7 @@ const Projects = (props: Props) => {
               description={project.description}
               link={project.link}
               image={project.image}
+              technologies={project.technologies}
             />
           );
         })}

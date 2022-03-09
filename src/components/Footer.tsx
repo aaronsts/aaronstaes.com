@@ -36,6 +36,12 @@ const Footer = (props: Props) => {
         </a>
       </div>
       <p className="text-sm font-light">Copywrite © Aaron Staes Media</p>
+      <a
+        className="text-sm font-light hover:underline"
+        href="mailto: aaron.staes@gmail.com"
+      >
+        aaron.staes@gmail.com
+      </a>
     </div>
   );
 };
