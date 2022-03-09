@@ -48,7 +48,7 @@ const Why = (props: Props) => {
   return (
     <IconContext.Provider value={value}>
       <div className="section wrapper flex flex-col items-center ">
-        <div className="gradient-h w-fit py-4 px-16 -skew-y-3 mb-16">
+        <div className="gradient-h w-fit py-4 px-16 -skew-y-3 mb-8 md:mb-16">
           <h2 className="skew-y-3 text-gray-50">Why</h2>
         </div>
         <div className="flex flex-col md:flex-row w-2/3 justify-between mb-8">

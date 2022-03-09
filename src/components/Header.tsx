@@ -23,6 +23,7 @@ const Header = (props: Props) => {
           layout="fill"
           objectFit="cover"
           objectPosition="center"
+          priority
         />
       </div>
     </div>

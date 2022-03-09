@@ -8,8 +8,8 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="bg-gray-900 text-gray-50 h-24 flex items-center justify-between wrapper">
-      <div className="flex gap-4">
+    <div className="bg-gray-900 text-gray-50 py-8 h-fit md:h-24 flex flex-col md:flex-row items-center justify-between wrapper">
+      <div className="flex gap-4 mb-4 md:m-0">
         <a
           href="https://unsplash.com/@aaronstaes"
           target={"_blank"}
@@ -35,7 +35,9 @@ const Footer = (props: Props) => {
           <SiInstagram size={"1.5rem"} />
         </a>
       </div>
-      <p className="text-sm font-light">Copywrite © Aaron Staes Media</p>
+      <p className="text-sm font-light mb-4 md:m-0">
+        Copywrite © Aaron Staes Media
+      </p>
       <a
         className="text-sm font-light hover:underline"
         href="mailto: aaron.staes@gmail.com"

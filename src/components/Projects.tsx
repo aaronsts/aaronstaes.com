@@ -65,7 +65,7 @@ const Projects = (props: Props) => {
   return (
     <div className="section h-fit mb-0 wrapper flex flex-col items-center bg-rose-600">
       <h2 className="text-gray-50 mb-10">Projects</h2>
-      <div className="flex gap-8">
+      <div className="flex flex-col md:flex-row gap-8">
         {content.map((project) => {
           return (
             <ProjectCard

@@ -31,7 +31,7 @@ const About = (props: Props) => {
           <div className="gradient-h h-4 md:h-12 w-full grow my-8"></div>
         </div>
         <div className=" grow flex justify-center">
-          <div className="w-fit h-fit -skew-y-3 overflow-hidden ml-8">
+          <div className="w-fit h-fit -skew-y-3 overflow-hidden md:ml-8">
             <Image
               src={profile}
               alt="profile picture of aaron staes"
