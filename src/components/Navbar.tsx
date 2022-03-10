@@ -95,46 +95,54 @@ const Navbar = (props: Props) => {
           } fixed top-0 bottom-0 right-0 z-30 left-0 md:left-2/3 bg-gray-900 transition-all duration-300 ease-in-out`}
         >
           <ul className="flex flex-col wrapper text-gray-50 mt-32">
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <Link href="#home">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <Link href="#about">
-                <a>About</a>
-              </Link>
-            </li>
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <Link href="#why">
-                <a>Why</a>
-              </Link>
-            </li>
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <Link href="#projects">
-                <a>Projects</a>
-              </Link>
-            </li>
+            <Link href="/" passHref>
+              <a>
+                <li
+                  className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  Home
+                </li>
+              </a>
+            </Link>
+            <Link href="#about" passHref>
+              <a>
+                <li
+                  className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  About
+                </li>
+              </a>
+            </Link>
+            <Link href="#why" passHref>
+              <a>
+                <li
+                  className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  Why
+                </li>
+              </a>
+            </Link>
+            <Link href="#projects" passHref>
+              <a>
+                <li
+                  className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  Projects
+                </li>
+              </a>
+            </Link>
           </ul>
         </div>
       </nav>

@@ -8,24 +8,24 @@ html {
 
 @layer components {
   body {
-    @apply bg-gray-50;
+    @apply bg-gray-50 selection:bg-rose-600/5;
   }
   h1 {
-    @apply font-black text-5xl md:text-8xl lg:text-9xl leading-none tracking-tighter uppercase mb-4;
+    @apply font-black text-5xl md:text-8xl lg:text-9xl leading-none tracking-tighter uppercase mb-4 selection:bg-rose-600/50;
   }
 
   h2 {
-    @apply font-bold text-5xl md:text-7xl leading-tight tracking-wider uppercase;
+    @apply font-bold text-5xl md:text-7xl leading-tight tracking-wider uppercase selection:bg-rose-600/50;
   }
 
   h3 {
-    @apply font-bold text-3xl uppercase mb-2;
+    @apply font-bold text-3xl uppercase mb-2 selection:bg-rose-600/50;
   }
   h4 {
-    @apply font-bold text-xl lg:text-2xl leading-relaxed tracking-widest uppercase mb-2;
+    @apply font-bold text-xl lg:text-2xl leading-relaxed tracking-widest uppercase mb-2 selection:bg-rose-600/50;
   }
   p {
-    @apply font-light text-xl lg:text-2xl my-2;
+    @apply font-light text-xl lg:text-2xl my-2 selection:bg-rose-600/50;
   }
 
   .wrapper {
