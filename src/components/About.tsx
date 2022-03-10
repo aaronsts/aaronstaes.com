@@ -7,7 +7,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="wrapper section flex flex-col ">
+    <div id="about" className="wrapper section flex flex-col scroll-mt-24 ">
       <div className="flex flex-col md:flex-row md:justify-between w-full items-center">
         <div className="w-full md:w-1/2">
           <div className="flex flex-col md:flex-row items-center w-full">

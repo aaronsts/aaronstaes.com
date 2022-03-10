@@ -1,34 +1,52 @@
-import React, { useState } from "react";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 // icons
 import { IconContext } from "react-icons";
 import { RiMenu4Line } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
 
-// images
-import Image from "next/image";
-import logo from "../assets/logo.svg";
-
 type Props = {};
 
 const Navbar = (props: Props) => {
   // state
   const [show, setShow] = useState(false);
+  const [bgColor, setBgColor] = useState(false);
 
   // eventHandlers
   const handleClick = () => {
     setShow(!show);
   };
 
+  // navbar color change
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 66) {
+      setBgColor(true);
+    } else {
+      setBgColor(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackground();
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground);
+  });
+
   // icon styling
   const value = {
-    size: "5rem",
+    size: "4rem",
   };
 
   return (
     <IconContext.Provider value={value}>
-      <nav className="fixed top-0 z-20 text-gray-50 w-screen flex flex-col bg-gray-900/10">
-        <div className="flex justify-between relative z-40 backdrop-blur wrapper py-4">
+      <nav
+        className={`fixed top-0 z-20 text-gray-50 w-screen flex flex-col transition-colors duration-500 ${
+          bgColor ? "bg-gray-900" : "bg-transparent"
+        }`}
+      >
+        <div className="flex justify-between relative z-40 wrapper py-4">
           <div>
             <svg
               width="100%"
@@ -37,8 +55,8 @@ const Navbar = (props: Props) => {
               viewBox="0 0 500 500"
               version="1.1"
               style={{
-                width: "80px",
-                height: "80px",
+                width: "64px",
+                height: "64px",
                 fillRule: "evenodd",
                 clipRule: "evenodd",
                 strokeMiterlimit: 2,
@@ -70,20 +88,28 @@ const Navbar = (props: Props) => {
         <div
           className={`${
             show ? "translate-x-0" : "translate-x-full"
-          } fixed top-28 bottom-0 right-0 z-50 left-0 md:left-2/3 bg-gray-900/10 backdrop-blur transition-all duration-300 ease-in-out`}
+          } fixed top-0 bottom-0 right-0 z-30 left-0 md:left-2/3 bg-gray-900 transition-all duration-300 ease-in-out`}
         >
-          <ul className="flex flex-col wrapper text-gray-50 mt-24">
-            <li className="text-3xl font-bold uppercase text-center py-4 border-b border-gray-50">
-              Home
+          <ul className="flex flex-col wrapper text-gray-50 mt-32">
+            <li className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50">
+              <Link href="#home">
+                <a>Home</a>
+              </Link>
             </li>
-            <li className="text-3xl font-bold uppercase text-center py-4 border-b border-gray-50">
-              About
+            <li className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50">
+              <Link href="#about">
+                <a>About</a>
+              </Link>
             </li>
-            <li className="text-3xl font-bold uppercase text-center py-4 border-b border-gray-50">
-              Projects
+            <li className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50">
+              <Link href="#why">
+                <a>Why</a>
+              </Link>
             </li>
-            <li className="text-3xl font-bold uppercase text-center py-4 border-b border-gray-50">
-              Contact
+            <li className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50">
+              <Link href="#projects">
+                <a>Projects</a>
+              </Link>
             </li>
           </ul>
         </div>

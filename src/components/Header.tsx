@@ -7,7 +7,7 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <div className="relative">
+    <div id="home" className="relative">
       <div className="bg-gray-900 bg-gradient-to-tr from-rose-600/30 to-amber-400/10 h-screen relative wrapper items-center flex ">
         <h1 className="text-gray-50 relative z-10 mx-auto md:mx-0">
           Hi, I&apos;m Aäron <br />a full stack <br />
