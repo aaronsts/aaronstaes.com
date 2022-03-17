@@ -2,35 +2,28 @@ import React, { useState, useEffect } from "react";
 
 // icons
 import { IconContext } from "react-icons";
+import { MdDraw } from "react-icons/md";
 import { MdComputer } from "react-icons/md";
-import { RiCustomerService2Fill } from "react-icons/ri";
-import { BsPatchCheckFill } from "react-icons/bs";
+import { MdOutlineMoving } from "react-icons/md";
 import Card from "./elements/Card";
 
 // icon styling
 const value = {
-  size: "5rem",
+  size: "3.5rem",
 };
 
 const content = [
   {
     id: 1,
-    text: `I’m working with modern technologies that make it easier to build fast
-    websites with efficient SEO and great user experiences. This means that
-    you, as a business owner, can enjoy a hassle-free experience of owning a
-    website. Not only improve these new technologies your SEO but they also
-    make your website future-proof and able to scale alongside your
-    business.`,
+    text: `Creating websites is more the writing code, it start with a thought-through design to make a UI that flows with the customer hands. Using best-practises to capture the users attention. Have a business idea but no clue where to start? Don’t hesitate to contact me.`,
   },
   {
     id: 2,
-    text: `Not only improve these new technologies your SEO but they also
-    make your website future-proof and able to scale alongside your
-    business.`,
+    text: `In these times, a website can be more then just static content. From a full web application to a personal blog, let me help you make your project come to life. Contact me for any questions you have.`,
   },
   {
     id: 3,
-    text: `Lorem Ipsum`,
+    text: `Wordpress is one of the oldest web technologies out there, it has a great ecosystem & community. However there are drawbacks, It’s slow and bloated. Using new and cutting-edge technologies I can help you migrate your website to the technologies of the Future.`,
   },
 ];
 
@@ -49,7 +42,7 @@ const Why = (props: Props) => {
     <IconContext.Provider value={value}>
       <div
         id="why"
-        className="section wrapper flex flex-col items-center scroll-mt-24 "
+        className="section wrapper flex flex-col items-center scroll-mt-24 min-h-[80vh] "
       >
         <div className="gradient-h w-fit py-4 px-16 -skew-y-3 mb-8 md:mb-16">
           <h2 className="skew-y-3 text-gray-50">Why</h2>
@@ -63,10 +56,10 @@ const Why = (props: Props) => {
               } `}
               onClick={handleClick}
             >
-              <MdComputer />
+              <MdDraw />
             </div>
             <h4 className={`mt-4 ${card == 0 ? "text-rose-600" : ""}`}>
-              Technology
+              Design
             </h4>
           </div>
           <div
@@ -79,10 +72,10 @@ const Why = (props: Props) => {
                 card == 1 ? "bg-rose-600 text-gray-50 hover:border-gray-50" : ""
               } `}
             >
-              <RiCustomerService2Fill />
+              <MdComputer />
             </div>
             <h4 className={`mt-4 ${card == 1 ? "text-rose-600" : ""}`}>
-              Service
+              Development
             </h4>
           </div>
           <div
@@ -95,10 +88,10 @@ const Why = (props: Props) => {
                 card == 2 ? "bg-rose-600 text-gray-50 hover:border-gray-50" : ""
               } `}
             >
-              <BsPatchCheckFill />
+              <MdOutlineMoving />
             </div>
             <h4 className={`mt-4 ${card == 2 ? "text-rose-600" : ""}`}>
-              Quality
+              Migration
             </h4>
           </div>
         </div>
