@@ -127,7 +127,7 @@ const Navbar = (props: Props) => {
                     setShow(false);
                   }}
                 >
-                  Why
+                  Services
                 </li>
               </a>
             </Link>

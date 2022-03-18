@@ -45,7 +45,7 @@ const Why = (props: Props) => {
         className="section wrapper flex flex-col items-center scroll-mt-24 min-h-[80vh] "
       >
         <div className="gradient-h w-fit py-4 px-16 -skew-y-3 mb-8 md:mb-16">
-          <h2 className="skew-y-3 text-gray-50">Why</h2>
+          <h2 className="skew-y-3 text-gray-50">Services</h2>
         </div>
         <div className="flex flex-col md:flex-row w-2/3 justify-between mb-8">
           <div className="flex flex-col items-center">
