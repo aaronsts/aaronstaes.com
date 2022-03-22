@@ -2,6 +2,7 @@
   "name": "next-tailwind-ts",
   "license": "MIT",
   "dependencies": {
+    "framer-motion": "^6.2.8",
     "next": "^12.1.0",
     "react": "^17.0.2",
     "react-awesome-slider": "^4.1.0",

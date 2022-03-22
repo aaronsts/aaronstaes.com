@@ -143,6 +143,16 @@ const Navbar = (props: Props) => {
                 </li>
               </a>
             </Link>
+            <a href="mailto:aaron.staes@gmail.com">
+              <li
+                className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b text-amber-500 border-amber-500 hover:border-amber-600 hover:text-amber-600"
+                onClick={() => {
+                  setShow(false);
+                }}
+              >
+                Contact
+              </li>
+            </a>
           </ul>
         </div>
       </nav>
