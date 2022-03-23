@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
+import { motion } from "framer-motion";
+
 // icons
 import { IconContext } from "react-icons";
 import { RiMenu4Line } from "react-icons/ri";
@@ -38,10 +40,24 @@ const Navbar = (props: Props) => {
   const value = {
     size: "4rem",
   };
+  const navContainer = {
+    hidden: {
+      y: -100,
+    },
+    show: {
+      y: 0,
+      transition: {
+        duration: 0.4,
+      },
+    },
+  };
 
   return (
     <IconContext.Provider value={value}>
-      <nav
+      <motion.nav
+        variants={navContainer}
+        initial="hidden"
+        animate="show"
         className={`fixed top-0 z-20 text-gray-50 w-screen flex flex-col transition-colors duration-500 ${
           bgColor ? "bg-gray-900" : "bg-transparent"
         }`}
@@ -155,7 +171,7 @@ const Navbar = (props: Props) => {
             </a>
           </ul>
         </div>
-      </nav>
+      </motion.nav>
     </IconContext.Provider>
   );
 };

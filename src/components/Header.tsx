@@ -8,19 +8,36 @@ import banner from "../assets/banner.jpg";
 type Props = {};
 
 const Header = (props: Props) => {
+  const headingContainer = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { duration: 0.8, staggerChildren: 0.1 } },
+  };
+  const headingItem = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
     <div id="home" className="relative">
       <div className="bg-gray-900 bg-gradient-to-tr from-rose-600/30 to-amber-400/10 h-screen relative wrapper items-center flex ">
         <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          variants={headingContainer}
+          initial="hidden"
+          animate="show"
           className="text-gray-50 relative z-10 mx-auto md:mx-0 "
         >
-          Hi, I&apos;m Aäron <br />a full stack <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-rose-600">
+          <motion.span variants={headingItem}>
+            Hi, I&apos;m Aäron <br />
+          </motion.span>
+          <motion.span variants={headingItem}>
+            a full stack <br />
+          </motion.span>
+          <motion.span
+            variants={headingItem}
+            className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-rose-600"
+          >
             developer
-          </span>
+          </motion.span>
         </motion.h1>
       </div>
       <div className="opacity-40">
