@@ -19,7 +19,7 @@ const Header = (props: Props) => {
 
   return (
     <div id="home" className="relative">
-      <div className="bg-gray-900 bg-gradient-to-tr from-rose-600/30 to-amber-400/10 h-screen relative wrapper items-center flex ">
+      <div className="absolute w-full top-0 bg-gray-900 bg-gradient-to-tr from-rose-600/30 to-amber-400/10 h-screen wrapper items-center flex ">
         <motion.h1
           variants={headingContainer}
           initial="hidden"
@@ -40,7 +40,7 @@ const Header = (props: Props) => {
           </motion.span>
         </motion.h1>
       </div>
-      <div className="opacity-40">
+      <div className="w-full h-screen top-0 relative opacity-40">
         <Image
           src={banner}
           alt="banner"
@@ -48,6 +48,7 @@ const Header = (props: Props) => {
           objectFit="cover"
           objectPosition="center"
           priority
+          placeholder="blur"
         />
       </div>
     </div>

@@ -11,7 +11,7 @@ type Props = {
 const ProjectCard = (props: Props) => {
   return (
     <div className="group w-72 h-96 overflow-hidden">
-      <div className=" text-gray-50 relative h-full ">{props.image}</div>
+      <div className=" text-gray-50 relative w-72 h-96 ">{props.image}</div>
       <a href={props.link} target="_blank" rel="noreferrer">
         <div className="bg-gray-900/60 shadow cursor-pointer backdrop-blur text-gray-50 w-72 h-96 p-4 transition-all duration-500 ease-out -translate-y-16 group-hover:-translate-y-full">
           <h3>{props.title}</h3>

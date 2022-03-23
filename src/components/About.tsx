@@ -39,6 +39,8 @@ const About = (props: Props) => {
               height={450}
               objectFit="cover"
               objectPosition="center"
+              placeholder="blur"
+              priority
             />
           </div>
         </div>

@@ -3,7 +3,7 @@ import ProjectCard from "./elements/ProjectCard";
 
 // Images
 import Image from "next/image";
-import projectOne from "../assets/project-one.jpeg";
+import projectOne from "../assets/project-one.jpg";
 import projectTwo from "../assets/project-two.png";
 
 // Icons
@@ -28,6 +28,7 @@ const content = [
         layout="fill"
         objectFit="cover"
         objectPosition="center"
+        placeholder="blur"
       />
     ),
     technologies: [
@@ -54,6 +55,7 @@ const content = [
         layout="fill"
         objectFit="cover"
         objectPosition="center"
+        placeholder="blur"
       />
     ),
     technologies: [],

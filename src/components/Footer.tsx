@@ -11,6 +11,7 @@ const Footer = (props: Props) => {
     <div className="bg-gray-900 text-gray-50 py-8 h-fit md:h-24 flex flex-col md:flex-row items-center justify-between wrapper">
       <div className="flex gap-4 mb-4 md:m-0">
         <a
+          aria-label="Unsplash Profile"
           href="https://unsplash.com/@aaronstaes"
           target={"_blank"}
           rel="noreferrer"
@@ -19,6 +20,7 @@ const Footer = (props: Props) => {
           <SiUnsplash size={"1.5rem"} />
         </a>
         <a
+          aria-label="Github Profile"
           href="https://github.com/aaronsts"
           target={"_blank"}
           rel="noreferrer"
@@ -27,6 +29,7 @@ const Footer = (props: Props) => {
           <SiGithub size={"1.5rem"} />
         </a>
         <a
+          aria-label="Instagram Profile"
           href="https://www.instagram.com/aaronstaes"
           target={"_blank"}
           rel="noreferrer"
