@@ -13,11 +13,6 @@ function HomePage() {
     <>
       <Head>
         <title>Aäron Staes Media | Design - Full Stack Development</title>
-        <meta
-          name="description"
-          content="As a curious and enthusiastic person, I'm always looking for
-              new opportunities and keep up to date with the latest trends."
-        />
       </Head>
       <Navbar />
       <Header />

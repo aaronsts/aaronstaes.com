@@ -15,7 +15,7 @@ const value = {
 const content = [
   {
     id: 1,
-    text: `Creating websites is more the writing code, it start with a thought-through design to make a UI that flows with the customer hands. Using best-practises to capture the users attention. Have a business idea but no clue where to start? Don’t hesitate to contact me.`,
+    text: `Creating websites is more than writing code, it starts with a thought-through design to make a UI that flows in the customers' hands. Using best-practises to captivate the attention of a user. Have a business idea but no clue where to start? Don’t hesitate to contact me.`,
   },
   {
     id: 2,
