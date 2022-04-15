@@ -8,7 +8,7 @@ import projectTwo from "../assets/project-two.png";
 import projectThree from "../assets/project-three.png";
 
 // Icons
-import { SiJavascript } from "react-icons/si";
+import { SiStimulus } from "react-icons/si";
 import { SiRubyonrails } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
@@ -41,8 +41,8 @@ const content = [
     technologies: [
       <div key={1}>
         <p data-tip="Javavscript / Stimulus">
-          <SiJavascript
-            style={{ color: "#F7DF1E", width: "2rem", height: "2rem" }}
+          <SiStimulus
+            style={{ color: "#77E8B9", width: "2rem", height: "2rem" }}
           />
         </p>
         <ReactTooltip place="right" type="light" effect="solid" />
@@ -76,8 +76,8 @@ const content = [
     technologies: [
       <div key={1}>
         <p data-tip="Javavscript / Stimulus">
-          <SiJavascript
-            style={{ color: "#F7DF1E", width: "2rem", height: "2rem" }}
+          <SiStimulus
+            style={{ color: "#77E8B9", width: "2rem", height: "2rem" }}
           />
         </p>
         <ReactTooltip place="right" type="light" effect="solid" />
