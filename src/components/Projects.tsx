@@ -74,7 +74,7 @@ const content = [
       />
     ),
     technologies: [
-      <div key={1}>
+      <div key={3}>
         <p data-tip="Javavscript / Stimulus">
           <SiStimulus
             style={{ color: "#77E8B9", width: "2rem", height: "2rem" }}
@@ -82,7 +82,7 @@ const content = [
         </p>
         <ReactTooltip place="right" type="light" effect="solid" />
       </div>,
-      <div key={2}>
+      <div key={4}>
         <p data-tip="Ruby on Rails">
           <SiRubyonrails
             style={{ color: "#CC0000", width: "2rem", height: "2rem" }}
@@ -108,28 +108,25 @@ const content = [
       />
     ),
     technologies: [
-      <div key={1}>
+      <div key={5}>
         <p data-tip="NextJS">
           <SiNextdotjs
-            key={1}
             style={{ color: "#FFF", width: "2rem", height: "2rem" }}
           />
         </p>
         <ReactTooltip place="right" type="light" effect="solid" />
       </div>,
-      <div key={1}>
+      <div key={6}>
         <p data-tip="Tailwind">
           <SiTailwindcss
-            key={2}
             style={{ color: "#06B6D4", width: "2rem", height: "2rem" }}
           />
         </p>
         <ReactTooltip place="right" type="light" effect="solid" />
       </div>,
-      <div key={1}>
+      <div key={7}>
         <p data-tip="Netlify">
           <SiNetlify
-            key={2}
             style={{ color: "#00C7B7", width: "2rem", height: "2rem" }}
           />
         </p>

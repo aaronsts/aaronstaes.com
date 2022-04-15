@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
 // components
 import About from "../components/About";
 import Footer from "../components/Footer";
@@ -15,11 +17,23 @@ function HomePage() {
         <title>Aäron Staes Media | Design - Full Stack Development</title>
       </Head>
       <Navbar />
-      <Header />
-      <About />
-      <Why />
-      <Projects />
-      <Footer />
+      <Parallax pages={4}>
+        <ParallaxLayer offset={0}>
+          <Header />
+        </ParallaxLayer>
+        <ParallaxLayer offset={1} speed={1.5}>
+          <About />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2}>
+          <Why />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3}>
+          <Projects />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4}>
+          <Footer />
+        </ParallaxLayer>
+      </Parallax>
     </>
   );
 }
