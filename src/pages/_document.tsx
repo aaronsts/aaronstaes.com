@@ -16,7 +16,7 @@ export default function Document() {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://aaronstaes-com.vercel.app/" />
+        <meta property="og:url" content="https://aaronstaes.com/" />
         <meta
           property="og:title"
           content="Aäron Staes Media | Design - Full Stack Development"
@@ -25,7 +25,10 @@ export default function Document() {
           property="og:description"
           content="Being both a developer and designer makes the process of building the perfect website for my clients' needs much easier."
         />
-        <meta property="og:image" content="" />
+        <meta
+          property="og:image"
+          content="https://aaronstaes.com/meta_img.avif"
+        />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
