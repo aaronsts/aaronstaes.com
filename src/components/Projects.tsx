@@ -108,10 +108,9 @@ const content = [
       />
     ),
     technologies: [
-      <div key={1}>
+      <div key={0}>
         <p data-tip="NextJS">
           <SiNextdotjs
-            key={1}
             style={{ color: "#FFF", width: "2rem", height: "2rem" }}
           />
         </p>
@@ -120,16 +119,14 @@ const content = [
       <div key={1}>
         <p data-tip="Tailwind">
           <SiTailwindcss
-            key={2}
             style={{ color: "#06B6D4", width: "2rem", height: "2rem" }}
           />
         </p>
         <ReactTooltip place="right" type="light" effect="solid" />
       </div>,
-      <div key={1}>
+      <div key={2}>
         <p data-tip="Netlify">
           <SiNetlify
-            key={2}
             style={{ color: "#00C7B7", width: "2rem", height: "2rem" }}
           />
         </p>

@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
 
   // navbar color change
   const changeBackground = () => {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY >= 66) {
       setBgColor(true);
     } else {
