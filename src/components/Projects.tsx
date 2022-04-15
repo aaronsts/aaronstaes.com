@@ -5,10 +5,17 @@ import ProjectCard from "./elements/ProjectCard";
 import Image from "next/image";
 import projectOne from "../assets/project-one.jpg";
 import projectTwo from "../assets/project-two.png";
+import projectThree from "../assets/project-three.png";
 
 // Icons
 import { SiJavascript } from "react-icons/si";
 import { SiRubyonrails } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { SiNetlify } from "react-icons/si";
+
+// Tooltip
+import ReactTooltip from "react-tooltip";
 
 type Props = {};
 
@@ -32,14 +39,22 @@ const content = [
       />
     ),
     technologies: [
-      <SiJavascript
-        key={1}
-        style={{ color: "#F7DF1E", width: "3rem", height: "3rem" }}
-      />,
-      <SiRubyonrails
-        key={2}
-        style={{ color: "#CC0000", width: "3rem", height: "3rem" }}
-      />,
+      <div key={1}>
+        <p data-tip="Javavscript / Stimulus">
+          <SiJavascript
+            style={{ color: "#F7DF1E", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+      <div key={2}>
+        <p data-tip="Ruby on Rails">
+          <SiRubyonrails
+            style={{ color: "#CC0000", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
     ],
   },
   {
@@ -58,7 +73,69 @@ const content = [
         placeholder="blur"
       />
     ),
-    technologies: [],
+    technologies: [
+      <div key={1}>
+        <p data-tip="Javavscript / Stimulus">
+          <SiJavascript
+            style={{ color: "#F7DF1E", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+      <div key={2}>
+        <p data-tip="Ruby on Rails">
+          <SiRubyonrails
+            style={{ color: "#CC0000", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+    ],
+  },
+  {
+    id: 3,
+    title: "One Day Jobs",
+    link: "https://www.onedayjobs.be/",
+    description: `A website made for a local business for small jobs around the house. One of the focus points for this website was to have a multipage form that guides the customer through a couple of question to deliver the best service possible.`,
+    image: (
+      <Image
+        src={projectThree}
+        alt="landing page of one day jobs"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+        placeholder="blur"
+      />
+    ),
+    technologies: [
+      <div key={1}>
+        <p data-tip="NextJS">
+          <SiNextdotjs
+            key={1}
+            style={{ color: "#FFF", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+      <div key={1}>
+        <p data-tip="Tailwind">
+          <SiTailwindcss
+            key={2}
+            style={{ color: "#06B6D4", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+      <div key={1}>
+        <p data-tip="Netlify">
+          <SiNetlify
+            key={2}
+            style={{ color: "#00C7B7", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+    ],
   },
 ];
 
