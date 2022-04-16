@@ -111,54 +111,64 @@ const Navbar = (props: Props) => {
           } fixed top-0 bottom-0 right-0 z-30 left-0 md:left-2/3 bg-gray-900 transition-all duration-300 ease-in-out`}
         >
           <ul className="flex flex-col wrapper text-gray-50 mt-32">
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <Link href="/" passHref>
-                <a>Home</a>
-              </Link>
-            </li>
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <Link href="#about" passHref>
-                <a>About</a>
-              </Link>
-            </li>
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <Link href="#why" passHref>
-                <a>Services</a>
-              </Link>
-            </li>
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <Link href="#projects" passHref>
-                <a>Projects</a>
-              </Link>
-            </li>
-            <li
-              className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b text-amber-500 border-amber-500 hover:border-amber-600 hover:text-amber-600"
-              onClick={() => {
-                setShow(false);
-              }}
-            >
-              <a href="mailto:aaron.staes@gmail.com">Contact</a>
-            </li>
+            <Link href="/" passHref>
+              <a>
+                <li
+                  className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  <a>Home</a>
+                </li>
+              </a>
+            </Link>
+            <Link href="#about" passHref>
+              <a>
+                <li
+                  className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  <a>About</a>
+                </li>
+              </a>
+            </Link>
+            <Link href="#why" passHref>
+              <a>
+                <li
+                  className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  <a>Services</a>
+                </li>
+              </a>
+            </Link>
+            <Link href="#projects" passHref>
+              <a>
+                <li
+                  className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b border-gray-50 hover:text-rose-600 hover:border-rose-600"
+                  onClick={() => {
+                    setShow(false);
+                  }}
+                >
+                  <a>Projects</a>
+                </li>
+              </a>
+            </Link>
+            <a href="mailto:aaron.staes@gmail.com">
+              <li
+                className="text-3xl font-bold uppercase text-center py-4 mb-4 border-b text-amber-500 border-amber-500 hover:border-amber-600 hover:text-amber-600"
+                onClick={() => {
+                  setShow(false);
+                }}
+              >
+                Contact
+              </li>
+            </a>
           </ul>
         </div>
       </motion.nav>
