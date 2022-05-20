@@ -17,7 +17,7 @@ const Header = (props: Props) => {
   // };
 
   return (
-    <div id="home" className="relative">
+    <div id="home" >
       <div className="absolute w-full top-0 bg-gray-900 bg-gradient-to-tr from-rose-600/30 to-amber-400/10 h-screen wrapper items-center flex ">
         <h1 className="text-gray-50 relative z-10 mx-auto md:mx-0 ">
           <span>

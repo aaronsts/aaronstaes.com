@@ -16,15 +16,15 @@ function HomePage() {
       <Head>
         <title>Aäron Staes Media | Design - Full Stack Development</title>
       </Head>
-      <Navbar />
-      <Parallax pages={4}>
-        <ParallaxLayer offset={0}>
+      {/* <Navbar /> */}
+      <Parallax pages={5}>
+        <ParallaxLayer offset={0} speed={.2}  >
           <Header />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={1.5}>
+        <ParallaxLayer offset={.9999} speed={.6} className=' bg-gray-50 flex justify-center items-center' >
           <About />
         </ParallaxLayer>
-        <ParallaxLayer offset={2}>
+        <ParallaxLayer offset={1.6} speed={.6}>
           <Why />
         </ParallaxLayer>
         <ParallaxLayer offset={3}>

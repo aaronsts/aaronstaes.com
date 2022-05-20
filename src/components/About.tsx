@@ -7,12 +7,11 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div id="about" className="wrapper section flex flex-col scroll-mt-24 ">
-      <div className="flex flex-col md:flex-row md:justify-between w-full items-center">
+    <div id="about" className="wrapper flex flex-col md:flex-row md:justify-between w-full items-center scroll-mt-24 bg-gray-50 ">
         <div className="w-full md:w-1/2">
           <div className="flex flex-col md:flex-row items-center w-full">
             <h2 className="md:pr-8">About</h2>
-            <div className="gradient-h h-4 md:h-12 w-full grow my-8"></div>
+            <div className="gradient-h h-4 md:h-12 w-full my-8"></div>
           </div>
           <div>
             <h4>
@@ -44,7 +43,6 @@ const About = (props: Props) => {
             />
           </div>
         </div>
-      </div>
     </div>
   );
 };
