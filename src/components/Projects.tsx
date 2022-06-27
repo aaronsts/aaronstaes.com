@@ -6,9 +6,10 @@ import Image from "next/image";
 import projectOne from "../assets/project-one.jpg";
 import projectTwo from "../assets/project-two.png";
 import projectThree from "../assets/project-three.png";
+import projectFour from "../assets/project-four.png";
 
 // Icons
-import { SiStimulus } from "react-icons/si";
+import { SiHeroku, SiSass, SiStimulus, SiStripe } from "react-icons/si";
 import { SiRubyonrails } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
@@ -129,6 +130,54 @@ const content = [
           <SiNetlify
             style={{ color: "#00C7B7", width: "2rem", height: "2rem" }}
           />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+    ],
+  },
+  {
+    id: 4,
+    title: "Semiprof.nl",
+    link: "https://www.semiprof.nl/",
+    description: `A platform where 'semi' professionals can sell their services to teach others.`,
+    image: (
+      <Image
+        src={projectFour}
+        alt="landing page of semiprof"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+        placeholder="blur"
+      />
+    ),
+    technologies: [
+      <div key={0}>
+        <p data-tip="Ruby on Rails">
+          <SiRubyonrails
+            style={{ color: "#CC0000", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+      <div key={1}>
+        <p data-tip="Stripe">
+          <SiStripe
+            style={{ color: "#008CDD", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+      <div key={2}>
+        <p data-tip="Heroku">
+          <SiHeroku
+            style={{ color: "#430098", width: "2rem", height: "2rem" }}
+          />
+        </p>
+        <ReactTooltip place="right" type="light" effect="solid" />
+      </div>,
+      <div key={3}>
+        <p data-tip="Sass">
+          <SiSass style={{ color: "#CC6699", width: "2rem", height: "2rem" }} />
         </p>
         <ReactTooltip place="right" type="light" effect="solid" />
       </div>,
